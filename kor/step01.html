@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ICPI WEEK 2025</title>
+        <link rel="stylesheet" href="./css/step.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+
+</head>
+
+<body>
+        <div id="wrap">
+                <header>
+                        <div class="header__wrapper">
+                                <h1 class="logo"><a href=""><img src="./src/images/logo.png" alt=""></a></h1>
+                                <nav>
+                                        <ul class="header__nav">
+                                                <li>
+                                                        <ul class="header__nav-actions">
+
+                                                                <li><a href="#">참가신청</a></li>
+                                                                <li><a href="#">로그인</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li>
+                                                        <ul class="header__nav-languages">
+
+                                                                <li class="kor"><a href="#">KO</a></li>
+                                                                <li><a href="#">EN</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </header>
+                <main>
+                        <section id="regis">
+                                <div class="wrapper">
+                                        <h2>온라인 참가신청</h2>
+                                        <ul class="step__container">
+                                                <li class="step__box step__box-active">
+                                                        <div class="step__circle"><i class="fa-solid fa-check"></i></div>
+                                                        <span>STEP 1</span>
+                                                </li>
+                                                <li class="step__line step__line-active">
+                                                        <div></div>
+                                                        <div></div>
+                                                        <div></div>
+                                                </li>
+                                                <li class="step__box">
+                                                        <div class="step__circle">2</div>
+                                                        <span>STEP 2</span>
+                                                </li>
+                                                <li class="step__line">
+                                                        <div></div>
+                                                        <div></div>
+                                                        <div></div>
+                                                </li>
+                                                <li class="step__box">
+                                                        <div class="step__circle">3</div>
+                                                        <span>STEP 3</span>
+                                                </li>
+                                                <li class="step__line">
+                                                        <div></div>
+                                                        <div></div>
+                                                        <div></div>
+                                                </li>
+                                                <li class="step__box">
+                                                        <div class="step__circle">4</div>
+                                                        <span>STEP 4</span>
+                                                </li>
+
+                                        </ul>
+                                </div>
+
+                        </section>
+                        <section id="regis__method">
+                                <div class="wrapper">
+                                        <h3>참가신청방법</h3>
+                                        <div class="box__type02">
+                                                <p>참가신청을 완료하시면 담당자 이메일로 참가계약서를 보내드립니다.</p>
+                                                <p>해당 참가계약서에 날인 하신 후 사무국으로 이메일 또는 팩스로 최종 제출해주시기 바랍니다.</p>
+                                        </div>
+                                        <div class="method">
+                                                <div>
+                                                        <span>참가신청서<br>완료</span>
+                                                </div>
+                                                <div>
+                                                        <span>참가계약서에<br>직인 날인</span>
+                                                </div>
+                                                <div>
+                                                        <span>날인본을<br>이메일 또는<br>팩스로 제출</span>
+                                                </div>
+                                                <div>
+                                                        <span>전체 참가 비용의<br>계약금(50%)<br>납입</span>
+                                                </div>
+                                                <div>
+                                                        <span>계약<br>완료</span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </section>
+                        <section id="contact__info">
+                                <div class="wrapper">
+                                        <h3>담당자 정보</h3>
+                                        <form action="">
+                                                <label for="contact_name">
+                                                        <span>담당자 성함</span>
+                                                        <input type="text" id="contact_name" name="contact_name">
+                                                </label>
+                                                <label for="company_name">
+                                                        <span>회사명</span>
+                                                        <input type="text" id="company_name" name="company_name">
+                                                </label>
+                                                <label for="phone_number">
+                                                        <span>휴대폰</span>
+                                                        <input type="text" id="phone_number" name="phone_number" placeholder="'-'를 제외한 숫자만 입력해주세요">
+                                                </label>
+                                                <label for="email">
+                                                        <span>이메일</span>
+                                                        <input type="email" id="email" name="email">
+                                                        <p>gmail 등록 시 메일 수신이 안될 경우가 있으니 가급적 다른 이메일 주소로 등록해 주세요.</p>
+                                                
+                                                </label>
+                                                <label for="interest__exhibition" class="interest__exhibition">
+                                                        <input type="hidden" value="" name="interest__exhibition" id="interest__exhibition">
+                                                        <span>관심전시</span>
+                                                        <div class="select__box">
+                                                                <a href="javascript:select()"><span class="selection">선택</span><span>^</span></a>
+                                                                <ul>
+                                                                        
+                                                                        <li tabindex="0">KOREA</li>
+                                                                        <li tabindex="0">KOREA PACK</li>
+                                                                        <li tabindex="0">KOREA MAT</li>
+                                                                        <li tabindex="0">COPHEX</li>
+                                                                        <li tabindex="0">KOREA PHARM & BIO</li>
+                                                                        <li tabindex="0">CI KOREA</li>
+                                                                        <li tabindex="0">KOREA LAB</li>
+                                                                        <li tabindex="0">KOREA COLD CHAIN</li>
+                                                                        <li tabindex="0">KOREA CHEM</li>
+                                                                </ul>
+                                                        </div>
+                                                </label>
+                                               
+
+
+                                        </form>
+                                </div>
+
+                        </section>
+                        <section id="privacy__policy">
+                                <div class="wrapper">
+                                        <h3>개인정보 취급방침</h3>
+                                        <div>
+                                                <div class="scorllbar__cover">
+                                                        <p>
+                                                                "㈜경연전람, ㈜케이와이엑스포 및 전시회 공동주최자"(이하 '전시사무국')는 회원님의 개인정보를 중요시하며 "정보통신망 이용 촉진 및 정보보호"에 관한 법률을 준수하고 있습니다. 전시사무국은 개인정보 취급방침을 통하여 회원님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+                                                        </p>
+
+                                                        <p>
+                                                                <strong>“전시회 공동주최자”라 함은 아래와 같습니다.</strong>
+                                                        </p>
+
+                                                        <ul>
+                                                                <li>KOREA PACK : (사)한국포장기계협회, 월간포장</li>
+                                                                <li>KOREA MAT : (사)한국통합물류협회</li>
+                                                                <li>KOREA COLD CHAIN : (사)한국식품콜드체인협회</li>
+                                                                <li>KOREA LAB : ㈜사이언스21</li>
+                                                                <li>KOREA CHEM : ㈜아이유뉴스</li>
+                                                        </ul>
+
+                                                        <p>
+                                                                가. 전시사무국이 수집한 회원님의 개인정보는 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로 사용되지 않으며, 이용목적이 변경될 시에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
+                                                        </p>
+
+                                                        <ol>
+                                                                <li>
+                                                                        <strong>홈페이지 회원가입 및 관리</strong><br>
+                                                                        등록 의사 확인, 등록 서비스 제공에 따른 본인 식별∙인증, 회원자격 유지∙관리, 서비스 부정 이용 방지, 각종 고지∙통지 등을 목적으로 개인정보를 처리합니다.
+                                                                </li>
+                                                                <li>
+                                                                        <strong>이용자 관리 및 민원사무 처리</strong><br>
+                                                                        민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락∙통지, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.
+                                                                </li>
+                                                                <li>
+                                                                        <strong>재화 또는 서비스 제공</strong><br>
+                                                                        물품 배송, 서비스 제공, 전시회 입장, 청구서 발송, 콘텐츠 제공, 본인인증, 요금 결제∙정산, 채권추심 등을 목적으로 개인정보를 처리합니다.
+                                                                </li>
+                                                                <li>
+                                                                        <strong>마케팅 및 광고에의 활용</strong><br>
+                                                                        신규 서비스 및 맞춤 서비스 제공, 전시회 이벤트 및 광고성 정보 제공 및 참여 기회 제공, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계 등을 목적으로 개인정보를 처리합니다. 또한, 재화나 서비스(전시사무국에서 주최하는 자기 전시회)의 홍보 또는 판매 권유 등을 위하여 해당 개인정보를 이용하여 정보 주체에게 연락할 수 있습니다.
+                                                                </li>
+                                                                <li>
+                                                                        <strong>세미나 및 컨퍼런스 참가 신청 관리</strong><br>
+                                                                        전시기간 중 병행 개최되는 세미나 및 컨퍼런스에 참가 신청을 한 경우, 등록된 개인정보를 행사 주최 및 주관사에게 제공할 수 있습니다.
+                                                                </li>
+                                                        </ol>
+
+                                                        <p>
+                                                                나. 또한, 전시사무국은 이용자에게 편리하고 다양한 서비스를 제공하기 위하여 이용자로부터 수집한 개인정보를 이용하여 전시사무국이 제공하는 각종 서비스를 우편, E-mail(전자우편), SMS(휴대폰 문자메시지), 팩스 등의 방법으로 광고 또는 마케팅 활동을 수행할 수 있습니다. 이용자가 원치 않을 경우, 전시사무국에 유선상으로 통보하여 해당 서비스를 거절할 수 있습니다.
+                                                        </p>
+
+                                                        <p>
+                                                                다. 전시사무국은 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한 규정 등 「개인정보 보호법」제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
+                                                        </p>
+
+                                                        <p>
+                                                                <strong>* 전시사무국은 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.</strong>
+                                                        </p>
+
+                                                        <h3>1) [한국전시산업진흥회]</h3>
+                                                        <p>
+                                                                <strong>개인정보를 제공받는 자:</strong> 한국전시산업진흥회<br>
+                                                                <strong>제공받는 자의 개인정보 이용목적:</strong> 전시회 인증을 위한 검증<br>
+                                                                <strong>제공하는 개인정보 항목:</strong> 성명, 소속(회사명), 직위, 부서, 국가, 주소, 전화, 팩스, 이메일, 휴대폰번호, 홈페이지<br>
+                                                                <strong>제공받는 자의 보유.이용기간:</strong> 전시회 인증 완료시까지
+                                                        </p>
+
+                                                        <h3>2) [전시회 참가업체]</h3>
+                                                        <p>
+                                                                <strong>개인정보를 제공받는 자:</strong> 다음 사항에 해당되는 본 행사 참가업체<br>
+                                                                - 관람객이 전시회 출입증 상의 바코드를 참가업체가 사용하는 바코드리더기에 스캐닝 할 경우<br>
+                                                                - 참가업체 홈페이지 등에 게재된 온라인 배너를 통해 관람객이 관람등록 할 경우<br>
+                                                                - 참가업체에서 제공한 전시회 초대권을 사용하여 관람객이 관람등록 할 경우<br>
+                                                                <strong>제공받는 자의 개인정보 이용목적:</strong> 마케팅활동<br>
+                                                                <strong>제공하는 개인정보 항목:</strong><br>
+                                                                필수 항목: 성명, 소속(회사명), 부서, 국가, 주소, 전화, 이메일, 휴대폰번호, 설문(관심 전시회, 관람 목적 등)<br>
+                                                                선택 항목: 직위, 팩스, 홈페이지 주소<br>
+                                                                <strong>제공받는 자의 보유.이용기간:</strong> 이용목적 달성 또는 정보 주체의 파기 요청
+                                                        </p>
+
+                                                        <h3>* 전자명함시스템에 의한 개인정보 제3자 제공 동의</h3>
+                                                        <p>
+                                                                본 행사는 관람객과 참가업체 상호간의 유용한 정보교류 서비스 제공을 위한 전자명함시스템을 운용합니다.
+                                                        </p>
+                                                        <p>
+                                                                <strong>제공받는 자:</strong> 전자명함(고객관리)시스템 사용 참가업체<br>
+                                                                <strong>제공목적:</strong> 비즈니스, 마케팅 활용<br>
+                                                                <strong>제공항목:</strong> 성명, 소속, 이메일 등 관람객 정보 및 설문조사 항목<br>
+                                                                <strong>보유기간:</strong> 1년<br>
+                                                                <strong>제공여부:</strong> 출입증 바코드 스캔 (정보제공 동의)
+                                                        </p>
+
+                                                        <h3>2. 개인정보처리 위탁</h3>
+
+                                                        <p>
+                                                                가. 전시사무국은 보다 나은 서비스 제공, 고객 편의제공 등 원활한 업무 수행을 위하여 전시회 등록시스템 운영사에 개인 정보 취급 업무를 위탁하여 운영할 수 있습니다.
+                                                        </p>
+
+                                                        <ol>
+                                                                <li>
+                                                                        <strong>수탁업체:</strong> (주)시스포유
+                                                                </li>
+                                                                <li>
+                                                                        <strong>위탁 업무내용:</strong> 홈페이지 관리, 온라인 전시관 플랫폼 관리, 웹사이트 및 서버관리, 등록시스템 운영위탁, 전자명함 시스템 서비스 제공 등
+                                                                </li>
+                                                                <li>
+                                                                        <strong>개인정보의 보유 및 이용기간:</strong> 위탁계약 종료시까지
+                                                                </li>
+                                                        </ol>
+                                                </div>
+                                        </div>
+
+
+
+                                        <form action="">
+                                                <div class="agree__check">
+                                                        <input type="checkbox" id="check1"><label for="check1" class="check1"></label>
+                                                        <span>위 내용을 확인하였으며, 동의합니다.</span>
+                                                </div>
+
+
+
+                                        </form>
+
+
+                                </div>
+
+                        </section>
+                        <section id="btn__area">
+                                <div class="wrapper">
+                                        <button class="btn__regular">다음</button>
+                                </div>
+                        </section>
+                        <div class="floating__button">
+                                <a href="#" class="quick_clock"></a>
+                                <a href="javascript:scrollTop()" class="quick_arrow"></a>
+
+                        </div>
+                </main>
+                <footer>
+                        <div class="footer__wrapper">
+                                <div class="footer__left">
+                                        <h4>(주)경연전람</h4>
+                                        <dl>
+                                                <dt>주소</dt>
+                                                <dd>서울시 영등포구 국회대로 750 금산빌딩 1104호</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>TEL</dt>
+                                                <dd>02-785-4771</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>FAX</dt>
+                                                <dd>02-785-6117</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>E-mail</dt>
+                                                <dd>sales@koreamat.org</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>대표자</dt>
+                                                <dd>김영수</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>사업자등록번호</dt>
+                                                <dd>107-86-20048</dd>
+                                        </dl>
+                                        <div class="footer__copy-mobile">COPYRIGHT © ICPI WEEK ALL RIGHTS RESERVED.</div>
+                                </div>
+                                <div class="footer__right">
+                                        <h4>ICPI WEEK 2025</h4>
+                                        <dl>
+                                                <dt>전시기간</dt>
+                                                <dd>2025. 4. 22(화) - 25(금)</dd>
+                                        </dl>
+                                        <dl>
+                                                <dt>전시장소</dt>
+                                                <dd>KINTEX</dd>
+                                        </dl>
+
+                                        <ul class="footer__sns">
+                                                <li><a href="#"><img src="./src/images/icons/naver.svg" alt=""></a></li>
+                                                <li><a href="#"><img src="./src/images/icons/twitter.svg" alt=""></a></li>
+                                                <li><a href="#"><img src="./src/images/icons/facebook.svg" alt=""></a></li>
+                                                <li><a href="#"><img src="./src/images/icons/linkedin.svg" alt=""></a></li>
+                                                <li><a href="#"><img src="./src/images/icons/youtube.svg" alt=""></a></li>
+                                        </ul>
+                                        <div class="footer__copy">COPYRIGHT © ICPI WEEK ALL RIGHTS RESERVED.</div>
+
+
+                                </div>
+                                <div class="footer__selectbox">
+                                        <div class="footer__selectbox-header">
+                                                <span>동시개최 행사</span>
+                                                <span><i class="fa-sharp fa-solid fa-plus"></i></span>
+                                        </div>
+                                        <ul class="footer__selectbox-options">
+                                                <li class="option"><a href="#" target="_blank">ICPI WEEK</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA PACK</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA COLD CHAIN</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA MAT</a></li>
+                                                <li class="option"><a href="#" target="_blank">COPHEX</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA PHARM&BIO</a></li>
+                                                <li class="option"><a href="#" target="_blank">CI KOREA</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA CHEM</a></li>
+                                                <li class="option"><a href="#" target="_blank">KOREA LAB</a></li>
+                                        </ul>
+                                </div>
+
+                        </div>
+
+                </footer>
+        </div>
+
+        <script>
+                $(".footer__selectbox").on("click", function() {
+                        $(".footer__selectbox-options").toggle();
+
+                });
+                // 최상단 이동버튼
+                function scrollTop() {
+                        $('html, body').animate({
+                                scrollTop: 0
+                        }, 'slow');
+                }
+                // select box
+                function select() {
+                        $(".select__box ul").show();
+                        $(".select__box a span:nth-child(2)").css("transform", "rotate(0deg)");
+                };
+                //select 박스 선택시 input value값 받기
+                $(".select__box ul li").click(function(){
+                        let select = $(this).text();
+                        $(".interest__exhibition .select__box .selection").text(select);
+                        $(".interest__exhibition input").val(select);
+                        console.log($(".interest__exhibition input").val());
+                        $(".select__box ul").hide();
+                        $(".select__box a span:nth-child(2)").css("transform", "rotate(180deg)");
+                });
+                // ul이 displaynone이 아닐경우에 
+        </script>
+</body>
+
+</html>

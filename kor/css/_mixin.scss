@@ -1,0 +1,141 @@
+ .box__type02 {
+         padding: 30px;
+         border-radius: 15px;
+         border: 1px solid #f1f5f9;
+         background-color: #d6dce3;
+
+         p {
+                 line-height: 24px;
+                 font-size: 16px;
+                 letter-spacing: -0.32px;
+         }
+
+ }
+
+ label {
+         display: block;
+         margin-bottom: 25px;
+
+         input[type="text"],
+         input[type="email"] {
+
+                 display: block;
+                 margin-top: 10px;
+                 border: 1px solid #d6dce3;
+                 border-radius: 15px;
+                 width: 100%;
+                 height: 45px;
+                 outline: none;
+                 padding-left: 20px;
+
+
+                 /* placeholder */
+                 &::placeholder {
+                         color: #b9c3d1;
+                         font-size: 16px;
+                 }
+
+                 /* focus */
+                 &:focus {
+                         border: 1px solid #252830;
+                         color: #717983;
+                 }
+         }
+
+
+
+ }
+
+ .btn__regular {
+         height: 50px;
+         min-width: 140px;
+         background-color: #252830;
+         border-radius: 15px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-size: 16px;
+         text-align: center;
+         margin: 55px 0 110px;
+
+ }
+/* 체크박스 커스텀 */
+ input[type="checkbox"] {
+         display: none;
+ }
+
+ label.check1 {
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+
+         position: relative;
+         outline: none;
+ }
+
+ #check1+label {
+         border: 2px solid #d6dce3;
+ }
+
+ /* on */
+ #check1:checked+label {
+
+         border: none;
+         background: url("../src/images/icons/checkbox_check.svg") no-repeat center/50% #000;
+
+ }
+
+ .select__box {
+         width: 100%;
+         position: relative;
+
+         a {
+                 width: 100%;
+                 background-color: #fff;
+                 border-radius: 15px;
+                 border: 1px solid #d6dce3;
+                 display: flex;
+                 justify-content: space-between;
+                 height: 45px;
+                 align-items: center;
+                 padding: 0 20px;
+                 color: #717983;
+
+                 span {
+                         &:nth-child(2) {
+                                 font-weight: 800;
+                                 font-size: 16px;
+                                 transform: rotate(180deg);
+                                 transition: 0.5s;
+                         }
+                 }
+         }
+
+         ul {
+                 display: none;
+                 position: absolute;
+                 width: 100%;
+                 border-radius: 15px;
+                 border: 1px solid #252830;
+                 z-index: 2;
+                 background-color: #fff;
+                 overflow: hidden;
+
+
+                 li {
+                         padding-left: 20px;
+                         height: 29px;
+                         display: flex;
+                         align-items: center;
+                         outline: none;
+
+                         &:focus,
+                         &:hover {
+                                 background-color: #111;
+                                 color: #fff;
+                         }
+                 }
+
+         }
+ }

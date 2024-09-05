@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        mix-blend-mode: screen;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#6f7276"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <image id="Vector_Smart_Object" data-name="Vector Smart Object" class="cls-2" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABMUlEQVQ4jaWQMUvDQBiGn8gNohYRp+A/EFcHQRA3cXHoqpuD4CYVKgguomi7Fh0UXRWKuvkP/AHO4m7pIKRJLsldJHBIm0sqwW84+N73u+fe75x2N90BOoAH1Bt1540KNaF12tE6rWmdulqnzSqXsxJK6ezlmumDyoBEqW2gZVY4rgr4dzlHN94psGRAL+e7M3ftbuoCV0b7As6AS2AdmATes75Rd55FFCerwJoZ/sgOpfQ0sGW0PrAJLAylXQGeLh7VhohiZW2R0+bHrHkg4jixVBlZ2gOwD0wBr8Ci0ZeFjOwEUsZ56aS1N5ut0j+8/r43/5HVnJCRNUxgAz6HvN6wIQriEgSjgNumG5V5Qkob4Ie/8396IrTj4gdjADlPhAUJBr4sBeS9wgTeoBww4gE/q2WKIr/t03YAAAAASUVORK5CYII="/>
+  </g>
+</svg>
